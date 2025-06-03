@@ -51,6 +51,12 @@
         type: CommunicationsConsoleBoundUserInterface
       enum.RemoteDeviceUiKey.Key: # Corvax-Next-AiRemoteControl
         type: RemoteDevicesBoundUserInterface
+      # Corvax-Next-AiMoreConsoles-start
+      enum.SolarControlConsoleUiKey.Key:
+        type: SolarControlConsoleBoundUserInterface
+      enum.RoboticsConsoleUiKey.Key:
+        type: RoboticsConsoleBoundUserInterface
+      # Corvax-Next-AiMoreConsoles-end
   - type: IntrinsicUI
     uis:
       enum.RadarConsoleUiKey.Key:
@@ -61,6 +67,14 @@
         toggleAction: ActionAGhostShowStationRecords
       enum.CommunicationsConsoleUiKey.Key:
         toggleAction: ActionAGhostShowCommunications
+      # Corvax-Next-AiMoreConsoles-start
+      enum.SolarControlConsoleUiKey.Key:
+        toggleAction: ActionAGhostShowSolar
+      enum.RoboticsConsoleUiKey.Key:
+        toggleAction: ActionAiShowRobotics
+  - type: SolarControlConsole
+  - type: RoboticsConsole
+  # Corvax-Next-AiMoreConsoles-end
   - type: CrewMonitoringConsole
   - type: GeneralStationRecordConsole
   - type: DeviceNetwork

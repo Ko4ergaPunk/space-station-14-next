@@ -27,3 +27,15 @@
     icon:
       sprite: Mobs/Silicon/chassis.rsi
       state: robot
+
+- type: entity
+  id: ActionAiShowRobotics
+  name: Robotics Control Interface
+  description: View a Robotics Control Interface.
+  components:
+  - type: InstantAction
+    icon: Corvax/Interface/AdminActions/solar.png # Corvax-Resprite
+    iconOn: Corvax/Interface/AdminActions/solar.png # Corvax-Resprite
+    keywords: [ "AI", "console", "interface" ]
+    priority: -11
+    event: !type:ToggleIntrinsicUIEvent { key: enum.RoboticsConsoleUiKey.Key }
